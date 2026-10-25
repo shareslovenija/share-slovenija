@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.sites/
+*.tar.gz
+
+src/content/in-depth/catalog.json
