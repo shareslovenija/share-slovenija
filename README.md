@@ -36,6 +36,8 @@ In this workspace, a portable Node runtime is available at `/tmp/node-v22.22.0-l
 
 Hash routes allow deployment on static hosting without server rewrite rules. Search runs locally over the translated informational pages and does not submit queries to Google. Article contents use accessible native disclosure controls. No backend, analytics or tracking cookies are required. No video consent prompt is displayed because no external video player is loaded.
 
+The Vite base path is `/share-slovenija/` for GitHub Pages. Public assets referenced from React should be prefixed with `import.meta.env.BASE_URL`; Vite rebases public font URLs in CSS during production builds.
+
 The theme follows the original site's computed styles: burgundy `#8C0E3E` header/footer, dark blue `#004F78` utility bar, `#333333` text, `#0D72C7` links, and `#EEEEEE` alternate sections. Body copy uses Noto Sans, headings/navigation Roboto, the site title Open Sans, and the opening drop cap Noto Serif. Fonts are served locally and include Slovene characters.
 
 The 27 pages in Poglobljeno contain complete Slovene translations of their captured source content, including 286 general questions and answers, quotations, lists, tables, and 114 distinct images (131 placements). Forms, form instructions, scripts, embedded media players and duplicate hidden expand/collapse labels are omitted. The introduction and organisation pages retain their earlier Slovene adaptations. The user confirmed permission to reproduce and translate the texts and images. Resource categories and contact details are local placeholders for future content. The only visitor-facing link to the original website is the English language link in the top bar.

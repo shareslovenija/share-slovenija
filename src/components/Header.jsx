@@ -40,7 +40,13 @@ export default function Header({ current }) {
           href="#/"
           aria-label="Share International – domov"
         >
-          <img className="header-logo" src="/assets/branding/share-slovenija.svg" alt="SHARE Slovenija" width="240" height="89" />
+          <img
+            className="header-logo"
+            src={`${import.meta.env.BASE_URL}assets/branding/share-slovenija.svg`}
+            alt="SHARE Slovenija"
+            width="240"
+            height="89"
+          />
           <span>Medsebojna delitev · Pravičnost · Mir</span>
         </a>
         <form

@@ -7,6 +7,9 @@ export default function MessageSection({ number }) {
   const duration =
     message.audio &&
     `${Math.floor(message.audio.duration / 60)}:${String(Math.floor(message.audio.duration % 60)).padStart(2, "0")}`;
+  const audioSrc =
+    message.audio &&
+    `${import.meta.env.BASE_URL}${message.audio.src.replace(/^\/+/, "")}`;
   return (
     <section
       className="message-section"
@@ -33,10 +36,10 @@ export default function MessageSection({ number }) {
               })
             }
           >
-            <source src={message.audio.src} type="audio/mpeg" />
+            <source src={audioSrc} type="audio/mpeg" />
             Vaš brskalnik ne podpira predvajanja zvoka.
           </audio>
-          <a className="message-download" href={message.audio.src} download>
+          <a className="message-download" href={audioSrc} download>
             Prenesite posnetek (MP3)
           </a>
         </div>
