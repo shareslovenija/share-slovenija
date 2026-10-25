@@ -1,0 +1,491 @@
+{
+  "poglobljeno-pregled": {
+    "links": {},
+    "anchors": {},
+    "cards": [
+      {
+        "start": 1,
+        "end": 3,
+        "href": "#/maitreja"
+      },
+      {
+        "start": 4,
+        "end": 6,
+        "href": "#/znamenja"
+      },
+      {
+        "start": 7,
+        "end": 9,
+        "href": "#/vecna-modrost"
+      },
+      {
+        "start": 10,
+        "end": 12,
+        "href": "#/mojstri-modrosti"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "href": "#/clanki-mojstra"
+      },
+      {
+        "start": 16,
+        "end": 18,
+        "href": "#/transmisijska-meditacija"
+      },
+      {
+        "start": 19,
+        "end": 21,
+        "href": "#/vprasanja-in-odgovori"
+      },
+      {
+        "start": 22,
+        "end": 24,
+        "href": "#/slovar"
+      }
+    ]
+  },
+  "maitreja": {
+    "links": {
+      "besedilo-26": "#/viri/knjige",
+      "besedilo-27": "#/znamenja",
+      "besedilo-28": "#/viri/clanki"
+    },
+    "anchors": {},
+    "cards": [
+      {
+        "start": 4,
+        "end": 6,
+        "href": "#/prednostne-naloge"
+      },
+      {
+        "start": 7,
+        "end": 9,
+        "href": "#/maitrejev-prihod"
+      },
+      {
+        "start": 10,
+        "end": 12,
+        "href": "#/nauki"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "href": "#/maitreja-in-jezus"
+      },
+      {
+        "start": 16,
+        "end": 18,
+        "href": "#/maitreja-in-drugi-ucitelji"
+      },
+      {
+        "start": 19,
+        "end": 21,
+        "href": "#/maitrejeva-sporocila"
+      },
+      {
+        "start": 22,
+        "end": 24,
+        "href": "#/vprasanja-o-maitreji"
+      }
+    ]
+  },
+  "prednostne-naloge": {
+    "links": {
+      "besedilo-5": "#/prednostne-naloge?ancla=humanity-at-a-crossroads",
+      "besedilo-23": "#/prednostne-naloge?ancla=global-consumption-and-the-environment",
+      "besedilo-31": "#/prednostne-naloge?ancla=sharing-is-the-answer",
+      "besedilo-36": "#/prednostne-naloge?ancla=solutions-at-hand",
+      "besedilo-40": "#/prednostne-naloge?ancla=the-next-steps",
+      "besedilo-51": "#/prednostne-naloge?ancla=humanity8217s-choice",
+      "besedilo-56": "#/maitreja",
+      "besedilo-57": "#/viri/clanki"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "nauki": {
+    "links": {
+      "besedilo-5": "#/nauki?ancla=on-world-peace8230-only-through-sharing",
+      "besedilo-15": "#/nauki?ancla=on-politics",
+      "besedilo-20": "#/nauki?ancla=on-market-forces-and-commercialization",
+      "besedilo-25": "#/nauki?ancla=on-crime-violence-and-drugs",
+      "besedilo-32": "#/nauki?ancla=on-the-environment",
+      "besedilo-38": "#/nauki?ancla=on-the-art-of-self-realization",
+      "besedilo-46": "#/nauki?ancla=on-his-emergence",
+      "besedilo-41": "#/viri/knjige",
+      "besedilo-55": "#/viri/knjige"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "vecna-modrost": {
+    "links": {
+      "besedilo-6": "#/vecna-modrost?ancla=god-and-man",
+      "besedilo-9": "#/vecna-modrost?ancla=the-law-of-rebirth",
+      "besedilo-11": "#/vecna-modrost?ancla=the-law-of-cause-and-effect",
+      "besedilo-14": "#/vecna-modrost?ancla=the-spiritual-hierarchy",
+      "besedilo-16": "#/vecna-modrost?ancla=the-continuity-of-teaching",
+      "besedilo-26": "#/viri/knjige",
+      "besedilo-27": "#/slovar",
+      "besedilo-28": "#/viri/videoposnetki"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "mojstri-modrosti": {
+    "links": {
+      "besedilo-11": "#/viri/clanki",
+      "besedilo-12": "#/viri/clanki",
+      "besedilo-13": "#/viri/clanki",
+      "besedilo-14": "#/viri/clanki",
+      "besedilo-15": "#/viri/clanki",
+      "besedilo-16": "#/viri/clanki",
+      "besedilo-17": "#/viri/clanki",
+      "besedilo-18": "#/viri/clanki",
+      "besedilo-19": "#/viri/videoposnetki",
+      "besedilo-20": "#/viri/videoposnetki",
+      "besedilo-21": "#/viri/videoposnetki",
+      "besedilo-22": "#/viri/videoposnetki",
+      "besedilo-23": "#/viri/videoposnetki"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "transmisijska-meditacija": {
+    "links": {
+      "besedilo-8": "#/transmisijska-meditacija?ancla=forming-a-group",
+      "besedilo-12": "#/transmisijska-meditacija?ancla=how-to-conduct-the-transmission",
+      "besedilo-17": "#/transmisijska-meditacija?ancla=what-happens-during-transmission",
+      "besedilo-21": "#/transmisijska-meditacija?ancla=triangles",
+      "besedilo-25": "#/transmisijska-meditacija?ancla=referral-to-groups",
+      "besedilo-29": "#/transmisijska-meditacija?ancla=for-more-information-read-the-book",
+      "besedilo-32": "#/vprasanja-in-odgovori",
+      "besedilo-33": "#/viri/knjige"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "slovar": {
+    "links": {
+      "besedilo-1": "#/slovar?ancla=A",
+      "besedilo-23": "#/slovar?ancla=A",
+      "besedilo-2": "#/slovar?ancla=B",
+      "besedilo-37": "#/slovar?ancla=B",
+      "besedilo-3": "#/slovar?ancla=C",
+      "besedilo-41": "#/slovar?ancla=C",
+      "besedilo-4": "#/slovar?ancla=D",
+      "besedilo-47": "#/slovar?ancla=D",
+      "besedilo-5": "#/slovar?ancla=E",
+      "besedilo-51": "#/slovar?ancla=E",
+      "besedilo-6": "#/slovar?ancla=F",
+      "besedilo-57": "#/slovar?ancla=F",
+      "besedilo-7": "#/slovar?ancla=G",
+      "besedilo-60": "#/slovar?ancla=G",
+      "besedilo-8": "#/slovar?ancla=H",
+      "besedilo-64": "#/slovar?ancla=H",
+      "besedilo-9": "#/slovar?ancla=I",
+      "besedilo-66": "#/slovar?ancla=I",
+      "besedilo-10": "#/slovar?ancla=J",
+      "besedilo-71": "#/slovar?ancla=J",
+      "besedilo-11": "#/slovar?ancla=K",
+      "besedilo-73": "#/slovar?ancla=K",
+      "besedilo-12": "#/slovar?ancla=L",
+      "besedilo-76": "#/slovar?ancla=L",
+      "besedilo-13": "#/slovar?ancla=M",
+      "besedilo-81": "#/slovar?ancla=M",
+      "besedilo-14": "#/slovar?ancla=N",
+      "besedilo-92": "#/slovar?ancla=N",
+      "besedilo-15": "#/slovar?ancla=O",
+      "besedilo-94": "#/slovar?ancla=O",
+      "besedilo-16": "#/slovar?ancla=P",
+      "besedilo-97": "#/slovar?ancla=P",
+      "besedilo-17": "#/slovar?ancla=R",
+      "besedilo-105": "#/slovar?ancla=R",
+      "besedilo-18": "#/slovar?ancla=S",
+      "besedilo-108": "#/slovar?ancla=S",
+      "besedilo-19": "#/slovar?ancla=T",
+      "besedilo-119": "#/slovar?ancla=T",
+      "besedilo-20": "#/slovar?ancla=V",
+      "besedilo-122": "#/slovar?ancla=V",
+      "besedilo-21": "#/slovar?ancla=W",
+      "besedilo-124": "#/slovar?ancla=W",
+      "besedilo-22": "#/slovar?ancla=Y",
+      "besedilo-126": "#/slovar?ancla=Y",
+      "besedilo-129": "#/vecna-modrost"
+    },
+    "anchors": {
+      "A": "besedilo-24",
+      "age": "besedilo-24",
+      "ageless-wisdom": "besedilo-25",
+      "ajna-centre": "besedilo-26",
+      "angel": "besedilo-27",
+      "antahkarana": "besedilo-28",
+      "anti-christ": "besedilo-29",
+      "aquarian-energy": "besedilo-30",
+      "aquarius": "besedilo-31",
+      "ashram": "besedilo-32",
+      "astral-body": "besedilo-33",
+      "astral-plane": "besedilo-34",
+      "avatar": "besedilo-35",
+      "avatar-of-synthesis": "besedilo-36",
+      "B": "besedilo-38",
+      "buddha": "besedilo-38",
+      "buddhi": "besedilo-39",
+      "buddhic-plane": "besedilo-40",
+      "C": "besedilo-42",
+      "causal-body": "besedilo-42",
+      "causal-plane": "besedilo-43",
+      "chakras": "besedilo-44",
+      "christ": "besedilo-45",
+      "christ-consciousness": "besedilo-46",
+      "D": "besedilo-48",
+      "day-of-declaration": "besedilo-48",
+      "deva": "besedilo-49",
+      "disciple": "besedilo-50",
+      "E": "besedilo-52",
+      "esotericism": "besedilo-52",
+      "etheric-body": "besedilo-53",
+      "etheric-planes": "besedilo-54",
+      "evil": "besedilo-55",
+      "evolution": "besedilo-56",
+      "F": "besedilo-58",
+      "forces-of-darkness": "besedilo-58",
+      "forces-of-light": "besedilo-59",
+      "G": "besedilo-61",
+      "god": "besedilo-61",
+      "great-invocation": "besedilo-62",
+      "guru": "besedilo-63",
+      "H": "besedilo-65",
+      "hierarchy": "besedilo-65",
+      "I": "besedilo-67",
+      "imam-mahdi": "besedilo-67",
+      "incarnation": "besedilo-68",
+      "initiation": "besedilo-69",
+      "involution": "besedilo-70",
+      "J": "besedilo-72",
+      "jesus": "besedilo-72",
+      "K": "besedilo-74",
+      "karma": "besedilo-74",
+      "krishna": "besedilo-75",
+      "L": "besedilo-77",
+      "law-of-cause-and-effect": "besedilo-77",
+      "law-of-rebirth": "besedilo-78",
+      "logos": "besedilo-79",
+      "lord-of-the-world": "besedilo-80",
+      "M": "besedilo-82",
+      "maitreya": "besedilo-82",
+      "man-woman": "besedilo-83",
+      "manas": "besedilo-84",
+      "mantram": "besedilo-85",
+      "masters-of-wisdom": "besedilo-86",
+      "mayavirupa": "besedilo-87",
+      "meditation": "besedilo-88",
+      "mental-body": "besedilo-89",
+      "mental-plane": "besedilo-90",
+      "monad": "besedilo-91",
+      "N": "besedilo-93",
+      "new-age": "besedilo-93",
+      "O": "besedilo-95",
+      "occult": "besedilo-95",
+      "overshadowing": "besedilo-96",
+      "P": "besedilo-98",
+      "permanent-atoms": "besedilo-98",
+      "personality": "besedilo-99",
+      "physical-plane": "besedilo-100",
+      "pisces": "besedilo-101",
+      "plane": "besedilo-102",
+      "planetary-logos": "besedilo-103",
+      "pralaya": "besedilo-104",
+      "R": "besedilo-106",
+      "rays": "besedilo-106",
+      "reincarnation": "besedilo-107",
+      "S": "besedilo-109",
+      "sanat-kumara": "besedilo-109",
+      "self-realization": "besedilo-110",
+      "self-monad": "besedilo-111",
+      "shamballa": "besedilo-112",
+      "solar-logos": "besedilo-113",
+      "soul": "besedilo-114",
+      "spirit": "besedilo-115",
+      "spirit-of-peace": "besedilo-116",
+      "spiritual": "besedilo-117",
+      "spiritual-hierarchy": "besedilo-118",
+      "T": "besedilo-120",
+      "transmission-meditation": "besedilo-120",
+      "triangle": "besedilo-121",
+      "V": "besedilo-123",
+      "vehicle": "besedilo-123",
+      "W": "besedilo-125",
+      "world-teacher": "besedilo-125",
+      "Y": "besedilo-127",
+      "yoga": "besedilo-127"
+    },
+    "cards": []
+  },
+  "vprasanja-in-odgovori": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "clanki-mojstra": {
+    "links": {},
+    "anchors": {},
+    "cards": [],
+    "omitBlocks": [
+      1
+    ]
+  },
+  "znamenja": {
+    "links": {},
+    "anchors": {},
+    "cards": [
+      {
+        "start": 3,
+        "end": 5,
+        "href": "#/znamenja/svetlobni-krizi"
+      },
+      {
+        "start": 6,
+        "end": 8,
+        "href": "#/znamenja/svetlobni-vzorci"
+      },
+      {
+        "start": 9,
+        "end": 11,
+        "href": "#/znamenja/svetlobni-blagoslovi"
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "href": "#/znamenja/kipi-in-ikone"
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "href": "#/znamenja/prikazovanja-in-videnja"
+      },
+      {
+        "start": 18,
+        "end": 20,
+        "href": "#/znamenja/zdravilne-vode"
+      },
+      {
+        "start": 21,
+        "end": 23,
+        "href": "#/znamenja/maitreja-v-nairobiju"
+      },
+      {
+        "start": 24,
+        "end": 26,
+        "href": "#/znamenja/maitrejeva-roka"
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "href": "#/znamenja/maitrejeva-zvezda"
+      },
+      {
+        "start": 30,
+        "end": 32,
+        "href": "#/znamenja/nlp"
+      },
+      {
+        "start": 33,
+        "end": 35,
+        "href": "#/znamenja/zitni-krogi"
+      }
+    ]
+  },
+  "maitrejev-prihod": {
+    "links": {
+      "besedilo-11": "#/znamenja",
+      "besedilo-12": "#/viri/videoposnetki"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "maitreja-in-jezus": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "maitreja-in-drugi-ucitelji": {
+    "links": {
+      "besedilo-4": "#/maitreja-in-drugi-ucitelji?ancla=sai-baba",
+      "besedilo-10": "#/maitreja-in-drugi-ucitelji?ancla=the-buddha",
+      "besedilo-12": "#/maitreja-in-drugi-ucitelji?ancla=krishna",
+      "besedilo-14": "#/maitreja-in-drugi-ucitelji?ancla=krishnamurti",
+      "besedilo-21": "#/viri/knjige"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "maitrejeva-sporocila": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "vprasanja-o-maitreji": {
+    "links": {
+      "besedilo-61": "#/vprasanja-in-odgovori"
+    },
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/prikazovanja-in-videnja": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/zitni-krogi": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/svetlobni-krizi": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/zdravilne-vode": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/svetlobni-blagoslovi": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/svetlobni-vzorci": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/maitreja-v-nairobiju": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/maitrejeva-roka": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/maitrejeva-zvezda": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/kipi-in-ikone": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  },
+  "znamenja/nlp": {
+    "links": {},
+    "anchors": {},
+    "cards": []
+  }
+}
