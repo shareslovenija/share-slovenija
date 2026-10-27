@@ -436,6 +436,7 @@ main:focus {
   text-decoration: none;
   color: #333333;
   border: 1px solid var(--border);
+  background: #f8f6f2;
   transition: box-shadow 0.15s;
 }
 .topic-card:hover {
@@ -485,7 +486,7 @@ main:focus {
 footer {
   background: #8c0e3e;
   color: #eeeeee;
-  padding: 44px 0 18px;
+  padding: 18px 0;
   font-size: 0.8rem;
 }
 footer a {
@@ -495,47 +496,27 @@ footer a {
 footer a:hover {
   color: white;
 }
-footer p {
-  line-height: 1.8;
+/* Footer links are underlined subtly so they read as links. */
+.footer-line a {
+  text-decoration: underline;
+  text-decoration-color: #ffffff66;
+  text-underline-offset: 3px;
 }
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 40px;
+.footer-line a:hover {
+  text-decoration-color: #ffffff;
 }
-.footer-brand {
-  font:
-    600 1.8rem "Open Sans",
-    sans-serif;
-  color: #fff;
-}
-.footer-grid > div:not(:first-child) {
+/* A single line: copyright on the left, privacy statement on the right. */
+.footer-line {
   display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
-.footer-grid strong {
-  color: white;
-  margin-bottom: 6px;
-}
-.footer-bottom {
-  border-top: 1px solid #b76e8a;
-  margin-top: 35px;
-  padding-top: 19px;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 0.7rem;
-  gap: 20px;
+  gap: 6px 28px;
 }
-.footer-bottom > div {
-  display: flex;
-  gap: 22px;
-}
-.footer-bottom button {
-  background: none;
-  color: inherit;
-  padding: 0;
-  font-size: inherit;
+@media (max-width: 600px) {
+  .footer-line {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .cookie-panel {
   position: fixed;
@@ -940,17 +921,6 @@ article section p {
   .quote-section {
     padding: 30px 0;
   }
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  .footer-grid > div:first-child {
-    grid-column: 1/-1;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 16px;
-  }
   .cookie-panel {
     padding: 18px;
     gap: 13px;
@@ -1134,54 +1104,96 @@ article section p {
     padding: 0 14px;
   }
 }
+/* Topic boxes on the in-depth pages match the home page's topic boxes. */
 .depth-topic-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  gap: 32px;
   margin: 24px 0;
 }
 .depth-topic-card {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  border: solid #bbbbbb;
-  border-width: 0 2px 2px 0;
+  border: 1px solid var(--border);
+  background: #f8f6f2;
   text-decoration: none;
   color: #333333;
+  transition: box-shadow 0.15s;
 }
 .depth-topic-card:hover {
   color: #333333;
-  border-color: #777777;
+  box-shadow: 0 6px 18px #173c5314;
 }
 .depth-topic-card > .depth-image {
   margin: 0;
   width: 100%;
-  height: 145px;
+  height: 185px;
   object-fit: cover;
 }
 .depth-topic-card > div {
-  padding: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-.depth-topic-card h3 {
+.depth-content .depth-topic-card h3 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.2;
   margin: 0 0 10px;
-  font-size: 18px;
-  line-height: 1.3;
 }
-.depth-topic-card p {
-  font-size: 14px;
-  line-height: 1.7;
-  margin: 0;
+.depth-content .depth-topic-card p {
+  font-size: 0.88rem;
+  line-height: inherit;
+  margin: 0 0 22px;
+}
+.depth-topic-card span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--link);
+  margin-top: auto;
+}
+@media (max-width: 1000px) {
+  .depth-topic-grid {
+    gap: 20px;
+  }
+  .depth-topic-card > div {
+    padding: 20px;
+  }
+}
+@media (max-width: 720px) {
+  .depth-topic-grid {
+    gap: 15px;
+  }
+  .depth-topic-card > .depth-image {
+    height: 125px;
+  }
+  .depth-topic-card > div {
+    padding: 15px;
+  }
+  .depth-content .depth-topic-card h3 {
+    font-size: 1.05rem;
+  }
+  .depth-content .depth-topic-card p {
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+  .depth-topic-card span {
+    font-size: 0.7rem;
+  }
 }
 @media (max-width: 560px) {
   .depth-topic-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 15px;
   }
   .depth-topic-card > .depth-image {
-    height: 135px;
+    height: 180px;
   }
   .depth-topic-card > div {
-    padding: 16px;
+    padding: 15px;
   }
 }
 
@@ -1336,4 +1348,308 @@ article section p {
 @media (max-width: 720px) {
   .wordmark .header-logo { width: 200px; }
   .wordmark:has(.header-logo) span { font-size: 0.52rem; }
+}
+.master-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 1.5em 0;
+  font-family: "Roboto", sans-serif;
+}
+.master-article-index ul {
+  list-style: none;
+  padding-left: 0;
+}
+.master-date {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+.book-entry {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0;
+}
+.book-entry > a {
+  flex-shrink: 0;
+}
+.book-entry > a > img {
+  width: 200px;
+  box-shadow: 3px 5px 10px #132f4326;
+}
+.book-entry h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+.book-page .book-image {
+  float: right;
+  max-width: 40%;
+  margin: 0 0 16px 24px;
+}
+/* A divider stops at a floated cover instead of being pushed below it. */
+.book-page hr {
+  overflow: hidden;
+}
+.book-pdf {
+  font-weight: 700;
+}
+.order-form {
+  display: grid;
+  gap: 16px;
+}
+.order-form label {
+  display: grid;
+  gap: 4px;
+}
+.order-form fieldset {
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+.order-form .order-book {
+  grid-template-columns: 4.5em 1fr;
+  align-items: center;
+  gap: 12px;
+}
+.order-form input,
+.order-form textarea {
+  padding: 8px;
+  border: 1px solid var(--border);
+  font: inherit;
+}
+.order-honey {
+  position: absolute;
+  left: -9999px;
+}
+.order-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+@media (max-width: 600px) {
+  .book-entry {
+    flex-direction: column;
+  }
+  .book-page .book-image {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 16px;
+  }
+}
+/* The cover floats so the text after a short contents panel moves up beside it. */
+.book-page .book-header .book-image {
+  float: right;
+  max-width: none;
+  width: 220px;
+  margin: 0 0 16px 32px;
+  box-shadow: 3px 5px 10px #132f4326;
+}
+.book-contents {
+  display: flow-root;
+  margin-bottom: 24px;
+  padding: 24px 28px;
+  border-left: 4px solid var(--brand);
+  background: #f8f6f2;
+}
+.book-contents > .eyebrow {
+  margin: 0 0 12px;
+}
+.toc-group + .toc-group {
+  margin-top: 18px;
+}
+.toc-group p,
+.book-contents > p {
+  margin: 0 0 6px;
+}
+.toc-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--brand);
+}
+.toc-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.toc-group li {
+  display: flex;
+  gap: 10px;
+}
+.toc-number {
+  flex: 0 0 2em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.book-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 16px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 700px) {
+  .book-page .book-header .book-image {
+    float: none;
+    width: 160px;
+    margin: 0 0 16px;
+  }
+}
+.book-subtitle {
+  font-size: 1.15em;
+  font-weight: 700;
+}
+.issue-subtitle {
+  margin-top: -0.4em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: var(--muted);
+}
+.issue-text h2 {
+  font-weight: 700;
+}
+.issue-text h3,
+.issue-text .issue-byline {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.issue-text .issue-byline {
+  margin-top: -0.4em;
+  color: var(--muted);
+}
+.article-divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 3.5rem 0 0;
+}
+.issue-text .issue-kicker {
+  margin: 3.5rem 0 -1rem;
+}
+.issue-text .article-divider + .issue-kicker {
+  margin-top: 1.5rem;
+}
+.issue-text .issue-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto 0.5rem;
+}
+.issue-text .issue-image-narrow {
+  float: right;
+  margin: 0.4rem 0 1rem 1.5rem;
+}
+.issue-text .issue-caption {
+  text-align: center;
+}
+.issue-text .issue-image-narrow + .issue-caption {
+  text-align: left;
+}
+.issue-text h2,
+.issue-text .article-divider,
+.issue-text .issue-kicker {
+  clear: both;
+}
+@media (max-width: 600px) {
+  .issue-text .issue-image-narrow {
+    float: none;
+    width: 100% !important;
+    margin: 1.5rem 0 0.5rem;
+  }
+}
+.magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 32px 24px;
+  margin: 32px 0;
+}
+.magazine-card {
+  display: grid;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+.magazine-card img,
+.magazine-cover-missing {
+  width: 100%;
+  aspect-ratio: 1 / 1.414;
+  object-fit: cover;
+  box-shadow: 3px 5px 10px #132f4326;
+  transition: transform 0.15s ease;
+}
+.magazine-card:hover img {
+  transform: translateY(-3px);
+}
+.magazine-card > span:last-child {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.magazine-cover-missing {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  background: #f8f6f2;
+  border: 1px solid var(--border);
+  color: var(--brand);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.magazine-content > a > img {
+  width: 145px;
+  box-shadow: 3px 5px 10px #132f4326;
+}
+.book-teaser {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 3rem 0 1rem;
+  padding: 20px;
+  border: 1px solid var(--border);
+  background: #f8f6f2;
+  color: #333333;
+  text-decoration: none;
+  transition: box-shadow 0.15s;
+}
+.book-teaser:hover {
+  color: #333333;
+  box-shadow: 0 6px 18px #173c5314;
+}
+.book-teaser > img {
+  width: 110px;
+  flex-shrink: 0;
+  box-shadow: 3px 5px 10px #132f4326;
+}
+.book-teaser > span {
+  display: grid;
+  gap: 8px;
+}
+.book-teaser .eyebrow {
+  margin: 0;
+}
+.book-teaser strong {
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+.book-teaser-more {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--link);
+}
+.contact-card {
+  display: grid;
+  gap: 4px;
+  margin: 24px 0 32px;
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+  background: #f8f6f2;
+  font-style: normal;
+  line-height: 1.7;
+}
+.contact-card strong {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
 }

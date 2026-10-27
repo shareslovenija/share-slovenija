@@ -1,16 +1,7 @@
 import { imageUrl } from "../content/images";
 import React from "react";
 import { pages } from "../content/pages";
-const highlights = [
-  "Amerika brez smeri",
-  "Slepi vodijo videče",
-  "Poziv Ameriki",
-  "Poročilo o svetovni pravičnosti 2026",
-  "Kako se začnejo državljanske vojne",
-  "Britanski policisti spregovorijo o opažanjih nepojasnjenih zračnih pojavov",
-  "Fašizem konca časov in boj za živi svet — recenzija",
-  "Sreča: spoznanja nove znanosti — recenzija",
-];
+import { CurrentIssue } from "./Magazine";
 export default function Home() {
   return (
     <>
@@ -80,30 +71,15 @@ export default function Home() {
               <br />
               Skupen pogled na svet.
             </h2>
-            <div className="magazine-content">
-              <img
-                referrerPolicy="no-referrer"
-                src={imageUrl("magazine")}
-                alt="Naslovnica revije Share International, oktober 2026"
-                loading="lazy"
-              />
-              <div>
-                <span className="issue-label">Oktober 2026</span>
-                <ul>
-                  {highlights.map((t) => (
-                    <li key={t}>{t}</li>
-                  ))}
-                </ul>
-                <a className="text-link" href="#/viri/revija">
-                  Revija in izdaje →
-                </a>
-              </div>
-            </div>
+            <CurrentIssue />
             <p>
               Revija povezuje politične, družbene, gospodarske in duhovne
               spremembe ter spodbuja praktično delovanje za pravičnejši in
               sočutnejši svet.
             </p>
+            <a className="text-link" href="#/revija">
+              Več o reviji →
+            </a>
           </div>
         </div>
       </section>
@@ -113,7 +89,7 @@ export default function Home() {
             <p className="eyebrow">Poglobite razumevanje</p>
             <h2>Ideje za drugačno prihodnost</h2>
           </div>
-          <a href="#/viri">Vsi viri →</a>
+          <a href="#/knjige">Vse knjige →</a>
         </div>
         <div className="topic-grid">
           {pages

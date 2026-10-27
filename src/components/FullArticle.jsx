@@ -1,11 +1,16 @@
 import React, { useMemo } from "react";
 import TopicNavigation from "./TopicNavigation";
 import MessageSection from "./MessageSection";
+import { MasterArticleIndex } from "./MasterArticles";
+import { BookTeaser } from "./Books";
 import {
   questionCategories,
   questionIntroduction,
 } from "../content/questionCategories";
 import presentation from "../content/in-depth-presentation.json";
+
+// In-depth pages that end with a box pointing to a related book.
+const relatedBooks = { "transmisijska-meditacija": "transmisija" };
 
 function collect(blocks, output = []) {
   for (const block of blocks) {
@@ -233,6 +238,7 @@ export default function FullArticle({ page }) {
           <div>
             <ContentBlock block={heading} context={context} suppressLinks />
             <ContentBlock block={description} context={context} suppressLinks />
+            <span>Preberite več →</span>
           </div>
         </a>,
       );
@@ -308,6 +314,8 @@ export default function FullArticle({ page }) {
           ) : (
             content
           )}
+          {page.slug === "clanki-mojstra" && <MasterArticleIndex />}
+          {relatedBooks[page.slug] && <BookTeaser slug={relatedBooks[page.slug]} />}
         </div>
       </article>
     </div>

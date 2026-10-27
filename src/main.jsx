@@ -6,9 +6,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Article from "./components/Article";
 import FullArticle from "./components/FullArticle";
+import { MasterArticle, findMasterArticle } from "./components/MasterArticles";
+import { BookOrder, BookPage, Books, findBook } from "./components/Books";
+import Magazine, { MagazineIssue } from "./components/Magazine";
 import Home from "./components/Home";
-import Resources, { ResourceCategory } from "./components/Resources";
-import { findResourceCategory } from "./content/resources";
 import "./styles.css";
 function useRoute() {
   const [hash, setHash] = useState(location.hash);
@@ -25,10 +26,31 @@ function Contact() {
     <div className="container simple-page narrow">
       <p className="eyebrow">Povežite se</p>
       <h1>Kontakt</h1>
-      <p className="intro">Kontaktne podatke bomo objavili kmalu.</p>
+      <p className="intro">
+        Za vprašanja o naših dejavnostih, publikacijah in transmisijski
+        meditaciji nam pišite ali nas pokličite.
+      </p>
+      <address className="contact-card">
+        <strong>Share Slovenija</strong>
+        <span>Gregorčičeva 9</span>
+        <span>4000 Kranj</span>
+        <span>
+          Telefon: <a href="tel:+38640463489">040 463 489</a>
+        </span>
+        <span>
+          E-pošta:{" "}
+          <a href="mailto:info.slo@share-international.net">
+            info.slo@share-international.net
+          </a>
+        </span>
+      </address>
+      <h2>Mednarodna organizacija</h2>
       <p>
-        Informacije za vprašanja o naših dejavnostih, publikacijah in
-        transmisijski meditaciji so v pripravi.
+        Share International lahko kontaktirate tudi prek{" "}
+        <a href="https://share-international.org/contact/" lang="en" rel="noreferrer">
+          kontaktnega obrazca na mednarodni spletni strani
+        </a>
+        .
       </p>
       <h2>Iščete meditacijsko skupino?</h2>
       <p>
@@ -44,9 +66,16 @@ function Privacy() {
     <div className="container simple-page narrow">
       <h1>Zasebnost</h1>
       <p>
-        Ta slovenska predstavitev ne uporablja analitike, oglasnih sledilnikov
-        ali kontaktnega obrazca. Iskanje poteka lokalno po vsebini slovenskih
+        Ta slovenska predstavitev ne uporablja analitike ali oglasnih
+        sledilnikov. Iskanje poteka lokalno po vsebini slovenskih
         predstavitvenih strani.
+      </p>
+      <h2>Naročilo knjig</h2>
+      <p>
+        Podatke, ki jih vnesete v obrazec za naročilo knjig, prek storitve
+        FormSubmit (formsubmit.co) posredujemo po e-pošti na naslov
+        info.slo@share-international.net. Uporabimo jih samo za izvedbo
+        naročila.
       </p>
       <h2>Zunanje povezave</h2>
       <p>
@@ -70,10 +99,30 @@ function Search({ params }) {
       .toLocaleLowerCase("sl")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
+  const [masterArticles, setMasterArticles] = useState([]);
+  useEffect(() => {
+    if (q.trim() && !masterArticles.length)
+      import("./content/master-articles-search.json").then((module) =>
+        setMasterArticles(module.default),
+      );
+  }, [q]);
   const results = q.trim()
-    ? pages.filter((p) =>
-        normalize(JSON.stringify(p)).includes(normalize(q.trim())),
-      )
+    ? [
+        ...pages.filter((p) =>
+          normalize(JSON.stringify(p)).includes(normalize(q.trim())),
+        ),
+        ...masterArticles
+          .filter((article) =>
+            normalize(article.title + "\n" + article.text).includes(
+              normalize(q.trim()),
+            ),
+          )
+          .map((article) => ({
+            slug: "clanki-mojstra/" + article.slug,
+            title: article.title,
+            intro: `Mojstrova sporočila · Share International, ${article.date}`,
+          })),
+      ]
     : [];
   return (
     <div className="container simple-page narrow">
@@ -100,7 +149,8 @@ function Search({ params }) {
 }
 function App() {
   const { slug, params } = useRoute();
-  const resourceCategory = findResourceCategory(slug);
+  const masterArticle = findMasterArticle(slug);
+  const book = findBook(slug);
   const page = findPage(
     slug === "poglobljeno"
       ? "maitreja"
@@ -111,15 +161,35 @@ function App() {
   useEffect(() => {
     document.title =
       (page?.title ||
-        resourceCategory?.title ||
+        masterArticle?.title ||
+        book?.title ||
+        (slug === "knjige/narocilo" && "Naročilo knjig") ||
         {
           poglobljeno: "Poglobljeno",
-          viri: "Viri in publikacije",
+          knjige: "Knjige",
+          revija: "Revija",
+        }[slug] ||
+        (slug.startsWith("revija/") && "Revija Share International") ||
+        {
           kontakt: "Kontakt",
           iskanje: "Iskanje",
           zasebnost: "Zasebnost",
         }[slug] ||
         "Share International") + " — Slovenija";
+    // The former "Viri in publikacije" section is now the book list.
+    if (slug === "viri" || slug.startsWith("viri/")) {
+      const rest = slug.replace(/^viri\/?(knjige\/?)?/, "");
+      location.replace(
+        "#/knjige" +
+          (slug.startsWith("viri/knjige/") ? "/" + rest : "") +
+          (params.toString() ? "?" + params : ""),
+      );
+      return;
+    }
+    if (book?.href) {
+      location.replace(book.href);
+      return;
+    }
     const anchor = params.get("ancla");
     const section = params.get("odsek");
     if (anchor && slug === "vprasanja-in-odgovori") {
@@ -156,10 +226,18 @@ function App() {
           ) : (
             <Article page={page} />
           )
-        ) : slug === "viri" ? (
-          <Resources />
-        ) : resourceCategory ? (
-          <ResourceCategory category={resourceCategory} />
+        ) : masterArticle ? (
+          <MasterArticle meta={masterArticle} />
+        ) : slug === "revija" ? (
+          <Magazine />
+        ) : slug.startsWith("revija/") ? (
+          <MagazineIssue id={slug.slice("revija/".length)} anchor={params.get("ancla")} />
+        ) : slug === "knjige" ? (
+          <Books />
+        ) : slug === "knjige/narocilo" ? (
+          <BookOrder selected={params.get("knjiga")} />
+        ) : book ? (
+          <BookPage book={book} anchor={params.get("ancla")} />
         ) : slug === "kontakt" ? (
           <Contact />
         ) : slug === "iskanje" ? (

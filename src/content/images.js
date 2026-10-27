@@ -9,7 +9,6 @@ const files = {
   wisdom: "book_cover_ageless_wisdom_teaching3a-2-1024x722.jpg",
   meditation: "book_cover_transmission2a-1024x722.jpg",
   teachings: "book_cover_laws_of_life1-2-1024x722.jpg",
-  magazine: "si-cover-202610.jpg",
   creme: "200907_bc_tokyo1.jpg",
 };
 

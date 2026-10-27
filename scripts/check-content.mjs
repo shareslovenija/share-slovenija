@@ -2,17 +2,16 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { pages } from "../src/content/pages.js";
 import { inDepthPages } from "../src/content/inDepth.js";
-import { resourceCategories } from "../src/content/resources.js";
 import { imageUrl } from "../src/content/images.js";
 const routes = new Set([
   "",
   "poglobljeno",
-  "viri",
+  "knjige",
+  "revija",
   "kontakt",
   "zasebnost",
   "iskanje",
   ...pages.map((p) => p.slug),
-  ...resourceCategories.map((c) => "viri/" + c.slug),
 ]);
 assert.equal(
   new Set(pages.map((p) => p.slug)).size,

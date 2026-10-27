@@ -47,9 +47,8 @@
   },
   "maitreja": {
     "links": {
-      "besedilo-26": "#/viri/knjige",
-      "besedilo-27": "#/znamenja",
-      "besedilo-28": "#/viri/clanki"
+      "besedilo-26": "#/knjige",
+      "besedilo-27": "#/znamenja"
     },
     "anchors": {},
     "cards": [
@@ -98,8 +97,7 @@
       "besedilo-36": "#/prednostne-naloge?ancla=solutions-at-hand",
       "besedilo-40": "#/prednostne-naloge?ancla=the-next-steps",
       "besedilo-51": "#/prednostne-naloge?ancla=humanity8217s-choice",
-      "besedilo-56": "#/maitreja",
-      "besedilo-57": "#/viri/clanki"
+      "besedilo-56": "#/maitreja"
     },
     "anchors": {},
     "cards": []
@@ -113,8 +111,8 @@
       "besedilo-32": "#/nauki?ancla=on-the-environment",
       "besedilo-38": "#/nauki?ancla=on-the-art-of-self-realization",
       "besedilo-46": "#/nauki?ancla=on-his-emergence",
-      "besedilo-41": "#/viri/knjige",
-      "besedilo-55": "#/viri/knjige"
+      "besedilo-41": "#/knjige",
+      "besedilo-55": "#/knjige"
     },
     "anchors": {},
     "cards": []
@@ -126,29 +124,14 @@
       "besedilo-11": "#/vecna-modrost?ancla=the-law-of-cause-and-effect",
       "besedilo-14": "#/vecna-modrost?ancla=the-spiritual-hierarchy",
       "besedilo-16": "#/vecna-modrost?ancla=the-continuity-of-teaching",
-      "besedilo-26": "#/viri/knjige",
-      "besedilo-27": "#/slovar",
-      "besedilo-28": "#/viri/videoposnetki"
+      "besedilo-26": "#/knjige",
+      "besedilo-27": "#/slovar"
     },
     "anchors": {},
     "cards": []
   },
   "mojstri-modrosti": {
-    "links": {
-      "besedilo-11": "#/viri/clanki",
-      "besedilo-12": "#/viri/clanki",
-      "besedilo-13": "#/viri/clanki",
-      "besedilo-14": "#/viri/clanki",
-      "besedilo-15": "#/viri/clanki",
-      "besedilo-16": "#/viri/clanki",
-      "besedilo-17": "#/viri/clanki",
-      "besedilo-18": "#/viri/clanki",
-      "besedilo-19": "#/viri/videoposnetki",
-      "besedilo-20": "#/viri/videoposnetki",
-      "besedilo-21": "#/viri/videoposnetki",
-      "besedilo-22": "#/viri/videoposnetki",
-      "besedilo-23": "#/viri/videoposnetki"
-    },
+    "links": {},
     "anchors": {},
     "cards": []
   },
@@ -160,8 +143,8 @@
       "besedilo-21": "#/transmisijska-meditacija?ancla=triangles",
       "besedilo-25": "#/transmisijska-meditacija?ancla=referral-to-groups",
       "besedilo-29": "#/transmisijska-meditacija?ancla=for-more-information-read-the-book",
-      "besedilo-32": "#/vprasanja-in-odgovori",
-      "besedilo-33": "#/viri/knjige"
+      "besedilo-32": "#/vprasanja-in-odgovori/meditacija",
+      "besedilo-33": "#/knjige"
     },
     "anchors": {},
     "cards": []
@@ -399,8 +382,7 @@
   },
   "maitrejev-prihod": {
     "links": {
-      "besedilo-11": "#/znamenja",
-      "besedilo-12": "#/viri/videoposnetki"
+      "besedilo-11": "#/znamenja"
     },
     "anchors": {},
     "cards": []
@@ -416,7 +398,7 @@
       "besedilo-10": "#/maitreja-in-drugi-ucitelji?ancla=the-buddha",
       "besedilo-12": "#/maitreja-in-drugi-ucitelji?ancla=krishna",
       "besedilo-14": "#/maitreja-in-drugi-ucitelji?ancla=krishnamurti",
-      "besedilo-21": "#/viri/knjige"
+      "besedilo-21": "#/knjige"
     },
     "anchors": {},
     "cards": []

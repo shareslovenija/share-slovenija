@@ -4,3 +4,4 @@ dist/
 *.tar.gz
 
 src/content/in-depth/catalog.json
+src/content/master-articles-search.json

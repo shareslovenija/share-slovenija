@@ -7,6 +7,9 @@
     "dev": "node scripts/build-content.mjs && vite --host 0.0.0.0",
     "build": "node scripts/build-content.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
+    "import:master": "node scripts/import-master-articles.mjs",
+    "import:books": "node scripts/import-books.mjs",
+    "import:revija": "node scripts/import-magazine.mjs",
     "check": "node scripts/build-content.mjs && node scripts/check-content.mjs && node scripts/validate-depth.mjs && node scripts/validate-messages.mjs"
   },
   "dependencies": {

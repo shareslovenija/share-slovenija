@@ -23,7 +23,7 @@ export default function Header({ current }) {
       </a>
       <div className="utility">
         <div className="container">
-          <span>Slovenska predstavitev</span>
+          <span>Slovenska spletna stran društva Share International</span>
           <div>
             <a href="#/o-nas">O nas</a>
             <a href="#/kontakt">Kontakt</a>
@@ -117,14 +117,22 @@ export default function Header({ current }) {
             Poglobljeno
           </a>
           <a
-            href="#/viri"
+            href="#/knjige"
             aria-current={
-              current === "viri" || current.startsWith("viri/")
+              current === "knjige" || current.startsWith("knjige/")
                 ? "page"
                 : undefined
             }
           >
-            Viri in publikacije
+            Knjige
+          </a>
+          <a
+            href="#/revija"
+            aria-current={
+              current === "revija" || current.startsWith("revija/") ? "page" : undefined
+            }
+          >
+            Revija
           </a>
           <a
             href="#/o-nas"
